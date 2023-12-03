@@ -1,0 +1,23 @@
+# Primitive Types
+- Number
+- String
+- Boolean
+- Null
+- Undefined
+- Void
+- Any
+- Never
+- Unknown
+
+# Object Types
+- Object
+- Array
+- Function
+- Tuple
+- Enum
+- Others
+
+# Variable Types (Type Annotation)
+Assigning a basic type to a variable is easy - just add :Type after the variable name
+    * let myVCar: type = value;
+    * const myVar: string = "So awesome";
