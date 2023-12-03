@@ -16,7 +16,7 @@ gameOver = true;
 
 // Type Inference
 //
-// 
+//
 let tvShow = "Olive Kitteridge";
 tvShow = "The Other Two";
 // tvShow = false; Type boolean is not assignable to type string
@@ -24,3 +24,23 @@ tvShow = "The Other Two";
 let isFunny = false;
 isFunny = true;
 // isFunny = "asd"; Type string is not assignable to type boolean
+
+
+// any type
+//
+//
+let thing: any = "hello";
+thing = 1;
+thing = false;
+thing();
+thing.toUpperCase();
+
+
+const movies = ["Arrival", "The Thing", "Aliens", "Amadeus"];
+let foundMovie: string;
+
+for (let movie of movies) {
+    if (movie === "Amadeus") {
+        foundMovie = "Amadeus";
+    }
+}
