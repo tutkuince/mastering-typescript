@@ -10,5 +10,18 @@ function greet(person: string = "stranger") : string {
     return `Hi there, ${person}!`
 }
 
-greet("Tutku");
-greet();
+console.log(greet("Tutku"));
+console.log(greet());
+
+const addNumbers = (x: number, y: number): number => {
+    return x + y;
+}
+
+console.log(addNumbers(10, 20));
+const result = (num: number): number | string => {
+    if (Math.random() < 0.5) {
+        return num.toString();
+    }
+    return num;
+}
+console.log(result(10));
