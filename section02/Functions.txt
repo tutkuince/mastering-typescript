@@ -1,0 +1,4 @@
+# Function Parameter types
+- In TypeScript, we can specify the type of function parameters in a function definition.
+- This allows TypeScript to enforce the types for the values being passed into your function.
+- Typing parameters is just like typing variables
