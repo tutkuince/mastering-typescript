@@ -31,3 +31,13 @@ const colorResult: string[] = colors.map((color: string) => {
    return color.toUpperCase();
 });
 console.log(colorResult);
+
+const printTwice = (msg: string = "No message value"): void => {
+    console.log(msg);
+    console.log(msg);
+}
+printTwice("King");
+
+const makeError = (msg: string): never => {
+    throw new Error(msg);
+}

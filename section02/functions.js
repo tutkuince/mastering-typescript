@@ -27,3 +27,9 @@ var colorResult = colors.map(function (color) {
     return color.toUpperCase();
 });
 console.log(colorResult);
+var printTwice = function (msg) {
+    if (msg === void 0) { msg = "No message value"; }
+    console.log(msg);
+    console.log(msg);
+};
+printTwice("King");
