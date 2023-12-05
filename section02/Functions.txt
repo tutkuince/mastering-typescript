@@ -7,3 +7,6 @@
 - We can specify the type returned by a function. Even though TypeScript can often infer this, I prefer the explicit annotations.
 - Add the type annotation after the function parameter list.
     * const addNums = (x: number, y: number): number => { return x + y; }
+
+# Anonymous Functions
+- When TypeScript can infer how an unnamed function is going to be called, it can automatically infer its parameters' types
