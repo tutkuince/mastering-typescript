@@ -2,3 +2,8 @@
 - In TypeScript, we can specify the type of function parameters in a function definition.
 - This allows TypeScript to enforce the types for the values being passed into your function.
 - Typing parameters is just like typing variables
+
+# Function Return Types
+- We can specify the type returned by a function. Even though TypeScript can often infer this, I prefer the explicit annotations.
+- Add the type annotation after the function parameter list.
+    * const addNums = (x: number, y: number): number => { return x + y; }
