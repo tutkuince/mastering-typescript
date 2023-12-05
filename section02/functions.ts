@@ -25,3 +25,9 @@ const result = (num: number): number | string => {
     return num;
 }
 console.log(result(10));
+
+const colors = ["red", "orange", "yellow"];
+const colorResult: string[] = colors.map((color: string) => {
+   return color.toUpperCase();
+});
+console.log(colorResult);

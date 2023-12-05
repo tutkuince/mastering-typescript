@@ -22,3 +22,8 @@ var result = function (num) {
     return num;
 };
 console.log(result(10));
+var colors = ["red", "orange", "yellow"];
+var colorResult = colors.map(function (color) {
+    return color.toUpperCase();
+});
+console.log(colorResult);
