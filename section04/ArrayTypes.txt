@@ -1,0 +1,4 @@
+# Array Types
+- Arrays can be typed using a type annotation followed by empty array brackets, like number[] fort an array of numbers.
+
+- Note: these arrays only allow data of that one type inside them.
