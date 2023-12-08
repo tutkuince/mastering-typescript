@@ -25,4 +25,4 @@ const getTotal = (products: Array<Product>): number => {
     });
     return total;
 }
-console.log(getTotal(products))
+console.log(getTotal(products));
