@@ -21,3 +21,11 @@ function printAge(age: number | string): void {
 
 printAge(34);
 printAge("25");
+
+function calculateTax(price: number | string, tax: number) {
+    if (typeof price === "string") {
+        return parseFloat(price.replace("$", ""))
+    } else {
+        return price * tax;
+    }
+}
