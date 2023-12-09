@@ -12,7 +12,7 @@ type Loc = {
     long: number;
 }
 
-let coordinates: Point | Loc =  {x: 1, y:35};
+let coordinates: Point | Loc = {x: 1, y: 35};
 coordinates = {lat: 321.123, long: 23.123};
 
 function printAge(age: number | string): void {
@@ -25,7 +25,8 @@ printAge("25");
 function calculateTax(price: number | string, tax: number) {
     if (typeof price === "string") {
         return parseFloat(price.replace("$", ""))
-    } else {
-        return price * tax;
     }
+    return price * tax;
 }
+
+calculateTax(24, .34);
