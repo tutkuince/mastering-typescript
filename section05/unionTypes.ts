@@ -30,3 +30,11 @@ function calculateTax(price: number | string, tax: number) {
 }
 
 calculateTax(24, .34);
+
+
+const stuff: (number | string) [] = [1, 2, 3, "asd"];
+
+const coords: (Point | Loc)[] = [];
+coords.push({lat: 312.123, long: 213.22});
+coords.push({x: 123, y: 231});
+console.log(coords);
