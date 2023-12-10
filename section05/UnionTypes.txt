@@ -8,3 +8,7 @@ to be this, this or this". TypeScript will enforce it from there.
 # Unions Narrowing the Type
 - Narrowing the Type is simply doing a type check before working with a value. If your value is a string you may want to use it differently than if you got a number.
 - Since unions allow multiple types for a value, it's good to check what came through before working with it.
+
+# Literal Types
+- Literal types are not just types. But the values themselves too.
+- On it's own, that's not super helpful. But combine it with something like unions and you can have very fine-tuned type options for Typescript to enforce.
