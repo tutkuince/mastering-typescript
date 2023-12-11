@@ -1,0 +1,1 @@
+const color: [number, number, number] = [123, 324, 345];
