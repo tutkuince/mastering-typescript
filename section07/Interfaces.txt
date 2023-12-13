@@ -1,0 +1,3 @@
+# Interfaces
+- Interfaces serve almost the exact same purpose as type aliases.
+- We can use them to create reusable, modular types that describe the shapes of objects
