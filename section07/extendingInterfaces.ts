@@ -18,3 +18,33 @@ const chewy: ServiceDog = {
     },
     job: "drug sniffer"
 }
+
+interface Person {
+    name: string;
+}
+
+interface Employee {
+    readonly id: number;
+    email: string
+}
+
+enum Levels {
+    ENTRY_LEVEL = "Entry Level",
+    JUNIOR = "Junior",
+    MID_LEVEL = "Mid Level",
+    SENIOR = "Senior"
+}
+
+interface Engineer extends Person, Employee {
+    level: Levels,
+    languages: Array<string>
+}
+
+const pierre: Engineer = {
+    name: "Pierre",
+    id: 123123,
+    email: "pierre@mail.com",
+    level: Levels.JUNIOR,
+    languages: ["JS", "Java"]
+}
+console.log(pierre);
