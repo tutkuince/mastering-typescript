@@ -32,3 +32,24 @@ const shoes: Product = {
 }
 
 console.log(shoes.applyDiscount(0.4));
+
+
+interface Dog {
+    name: string;
+    age: number;
+}
+
+// reopening interface
+interface Dog {
+    breed: string;
+    bark(): string;
+}
+
+const elton: Dog = {
+    name: "Elton",
+    age: 0.5,
+    breed: "Australian Shepherd",
+    bark(): string {
+        return "WOOF WOOF!";
+    }
+}
