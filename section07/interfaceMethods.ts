@@ -14,3 +14,21 @@ const tutku: Person = {
     sayHi: () => "Hi"
 }
 console.log(tutku);
+
+interface Product {
+    name: string;
+    price: number;
+    applyDiscount(discount: number): number;
+}
+
+const shoes: Product = {
+    name: "Blue Suede Shoes",
+    price: 100,
+    applyDiscount(amount: number): number {
+        const newPrice = this.price * (1 - amount);
+        this.price = newPrice;
+        return newPrice;
+    }
+}
+
+console.log(shoes.applyDiscount(0.4));

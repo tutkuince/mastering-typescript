@@ -6,3 +6,13 @@ var tutku = {
     sayHi: function () { return "Hi"; }
 };
 console.log(tutku);
+var shoes = {
+    name: "Blue Suede Shoes",
+    price: 100,
+    applyDiscount: function (amount) {
+        var newPrice = this.price * (1 - amount);
+        this.price = newPrice;
+        return newPrice;
+    }
+};
+console.log(shoes.applyDiscount(0.4));
