@@ -109,6 +109,9 @@
   "include": [
     "section08"
   ],
+  "exclude": [
+    "section08/dontTouch.ts"
+  ],
   "files": [
     "section08/farmstand.ts",
     "section08/index.ts"
