@@ -1,8 +1,9 @@
-var chewy = {
+"use strict";
+const chewy = {
     name: "Chewy",
     age: 4.5,
     breed: "Lab",
-    bark: function () {
+    bark() {
         return "bark!";
     },
     job: "drug sniffer"
@@ -14,7 +15,7 @@ var Levels;
     Levels["MID_LEVEL"] = "Mid Level";
     Levels["SENIOR"] = "Senior";
 })(Levels || (Levels = {}));
-var pierre = {
+const pierre = {
     name: "Pierre",
     id: 123123,
     email: "pierre@mail.com",

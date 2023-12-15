@@ -1,18 +1,27 @@
-var tutku = {
+"use strict";
+const tutku = {
     name: "Tutku",
     age: 15,
     id: 123123,
     nickname: "ns",
-    sayHi: function () { return "Hi"; }
+    sayHi: () => "Hi"
 };
 console.log(tutku);
-var shoes = {
+const shoes = {
     name: "Blue Suede Shoes",
     price: 100,
-    applyDiscount: function (amount) {
-        var newPrice = this.price * (1 - amount);
+    applyDiscount(amount) {
+        const newPrice = this.price * (1 - amount);
         this.price = newPrice;
         return newPrice;
     }
 };
 console.log(shoes.applyDiscount(0.4));
+const elton = {
+    name: "Elton",
+    age: 0.5,
+    breed: "Australian Shepherd",
+    bark() {
+        return "WOOF WOOF!";
+    }
+};

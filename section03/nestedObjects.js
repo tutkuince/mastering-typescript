@@ -1,22 +1,26 @@
-var describePerson = function (person) {
-    return "Person: ".concat(person.name, ",\n    Age: ").concat(person.age, ",\n    parents: ").concat(person.parentNames.mom, ", ").concat(person.parentNames.dad, ".");
+"use strict";
+const describePerson = (person) => {
+    return `Person: ${person.name},
+    Age: ${person.age},
+    parents: ${person.parentNames.mom}, ${person.parentNames.dad}.`;
 };
-var result = describePerson({ name: 'Okan', age: 45, parentNames: { mom: 'Buse', dad: 'Fatih' } });
+const result = describePerson({ name: 'Okan', age: 45, parentNames: { mom: 'Buse', dad: 'Fatih' } });
 console.log(result);
-var printSong = function (song) {
-    return "Title: ".concat(song.title, ", Artist: ").concat(song.artist, ", Number of Streams: ").concat(song.numStreams, "\n            Credits => Producer: ").concat(song.credits.producer, ", Writer: ").concat(song.credits.writer);
+const printSong = (song) => {
+    return `Title: ${song.title}, Artist: ${song.artist}, Number of Streams: ${song.numStreams}
+            Credits => Producer: ${song.credits.producer}, Writer: ${song.credits.writer}`;
 };
-var calculatePayout = function (song) {
+const calculatePayout = (song) => {
     return song.numStreams * 0.0033;
 };
-var mySong = {
+const mySong = {
     title: "Unchained Melody",
     artist: "Righteous Brothers",
     numStreams: 123123,
     credits: { producer: "Phil Spector", writer: "Alex North" }
 };
-var printSongResult = printSong(mySong);
+const printSongResult = printSong(mySong);
 console.log(printSongResult);
 console.log("---------------------------");
-var calculatePayoutResult = calculatePayout(mySong);
+const calculatePayoutResult = calculatePayout(mySong);
 console.log(calculatePayoutResult);
