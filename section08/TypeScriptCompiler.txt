@@ -1,0 +1,2 @@
+# Configuring Typescript
+- tsc -w/--watch index.ts: Anytime we change this file index.ts and save it.
