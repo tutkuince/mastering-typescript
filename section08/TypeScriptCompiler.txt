@@ -13,3 +13,6 @@ The directory structure of the original source files is preserved; see rootDir i
 
 # Target Option
 - "target": "es2015" => Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
+
+# Strict Option
+- Enable all strict type-checking options.
