@@ -10,3 +10,6 @@
 - If specified, .js (as well as .d.ts, .js.map, etc.) files will be emitted into this directory.
 The directory structure of the original source files is preserved; see rootDir if the computed root is not what you intended.
 - If your outDir was dist, TypeScript would write js files to dir file.
+
+# Target Option
+- "target": "es2015" => Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
