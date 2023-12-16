@@ -1,4 +1,8 @@
 # Configuring Typescript
+
+# tsconfig.json file
+- "tsc --init": we can create config file for TypeScript project
+
 - tsc -w/--watch index.ts: Anytime we change this file index.ts and save it.
 - we can use tsc command for create related js files. but we need to define our classes in tsconfig.json. (files:)
 
