@@ -1,3 +1,8 @@
 # Configuring Typescript
 - tsc -w/--watch index.ts: Anytime we change this file index.ts and save it.
 - we can use tsc command for create related js files. but we need to define our classes in tsconfig.json. (files:)
+
+# Out Dir - outdir
+- If specified, .js (as well as .d.ts, .js.map, etc.) files will be emitted into this directory.
+The directory structure of the original source files is preserved; see rootDir if the computed root is not what you intended.
+- If your outDir was dist, TypeScript would write js files to dir file.
