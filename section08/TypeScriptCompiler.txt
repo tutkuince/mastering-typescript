@@ -18,4 +18,9 @@ The directory structure of the original source files is preserved; see rootDir i
 - Enable all strict type-checking options.
 
 # Non-null Assertion Operator
-- "!"
+- "!" => If we put the exclamation point after this line of code right here, this tells TypeScript stop worrying. This is guaranteed not to be null
+    * const btn = document.getElementById("btn")!;
+
+# Type Assertions
+- Sometimes you might have more specific information about a value's type, and you want to make sure TypeScript knows it too.
+- You can assert a value's type by using the 'as' keyword, followed by the specific type you want to assert.
