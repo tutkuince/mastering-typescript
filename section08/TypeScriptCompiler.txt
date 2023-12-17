@@ -16,3 +16,6 @@ The directory structure of the original source files is preserved; see rootDir i
 
 # Strict Option
 - Enable all strict type-checking options.
+
+# Non-null Assertion Operator
+- "!"
