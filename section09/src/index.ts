@@ -58,4 +58,26 @@ barney.score = 150;
 console.log(barney.score);
 console.log(barney.fullName);
 
+interface Colorful {
+    color: string;
+}
 
+class Bike implements Colorful {
+    constructor(public color: string) {}
+}
+
+interface Printable {
+    print(): void;
+}
+
+class Jacket implements Colorful, Printable {
+    constructor(public brand: string, public color: string) {}
+
+    print(): void {
+        console.log(`${this.color} ${this.brand} jacket`);
+    }
+}
+
+const bike1 = new Bike("Red");
+
+const jacket1 = new Jacket("Prada", "Black");

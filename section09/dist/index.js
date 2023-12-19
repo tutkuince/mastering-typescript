@@ -54,3 +54,19 @@ const barney = new Player("Barney", "Stinson", 100, "Westside");
 barney.score = 150;
 console.log(barney.score);
 console.log(barney.fullName);
+class Bike {
+    constructor(color) {
+        this.color = color;
+    }
+}
+class Jacket {
+    constructor(brand, color) {
+        this.brand = brand;
+        this.color = color;
+    }
+    print() {
+        console.log(`${this.color} ${this.brand} jacket`);
+    }
+}
+const bike1 = new Bike("Red");
+const jacket1 = new Jacket("Prada", "Black");
