@@ -17,10 +17,11 @@ class Player {
     // private readonly first: string; // public by default
     // private readonly last: string;  // we can use "readonly #first". It is the same thing.
     // public score: number = 0;
-    constructor(first, last, _score) {
+    constructor(first, last, _score, nickname) {
         this.first = first;
         this.last = last;
         this._score = _score;
+        this.nickname = nickname;
     } // shortcut
     privateMethod() {
         console.log("This is a private method, only accessible in Player class.");
@@ -38,7 +39,16 @@ class Player {
         this._score = newScore;
     }
 }
-const barney = new Player("Barney", "Stinson", 100);
+class SuperPlayer extends Player {
+    constructor() {
+        super(...arguments);
+        this.isAdmin = true;
+    }
+    changeNickname() {
+        this.nickname = "Admin";
+    }
+}
+const barney = new Player("Barney", "Stinson", 100, "Westside");
 // barney.last = "tot"; => Attempt to assign to const or readonly variable
 // barney.first = "Tot"; => Property first is private and only accessible within class Player
 barney.score = 150;
