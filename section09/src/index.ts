@@ -1,7 +1,7 @@
 class Player {
-    readonly first: string;
-    readonly last: string;
-    score: number = 0;
+    public readonly first: string; // public by default
+    public readonly last: string;
+    public score: number = 0;
     constructor(first: string, last: string) {
         this.first = first;
         this.last = last;
@@ -9,5 +9,5 @@ class Player {
 }
 
 const barney = new Player("Barney", "Stinson");
-// barney.last = "tot"; => Attempt to assign to const or readonly variable 
+// barney.last = "tot"; => Attempt to assign to const or readonly variable
 console.log(barney.score);

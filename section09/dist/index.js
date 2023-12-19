@@ -7,5 +7,5 @@ class Player {
     }
 }
 const barney = new Player("Barney", "Stinson");
-// barney.last = "tot"; => Attempt to assign to const or readonly variable 
+// barney.last = "tot"; => Attempt to assign to const or readonly variable
 console.log(barney.score);
