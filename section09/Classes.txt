@@ -1,2 +1,3 @@
 # Classes
--
+- Classes are templates for creating objects in JavaScript. They contain a few different important pieces
+which allow for creation and extension of customized objects.
