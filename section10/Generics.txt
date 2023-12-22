@@ -1,0 +1,2 @@
+# Generics
+- Generics allow us to define reusable functions and classes that work with multiple types rather than a single type.
