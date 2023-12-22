@@ -23,3 +23,15 @@ var resultStr = identity("str");
 var resultBoolean = arrowIdentity(true);
 console.log(resultStr);
 console.log(resultBoolean);
+var getRandomElement = function (items) {
+    return items[Math.floor(Math.random() * items.length)];
+};
+var booleanArray = [true, false, true];
+var resultForBoolean = getRandomElement(booleanArray);
+console.log(resultForBoolean);
+var numberArray = [4, 5, 6, 7];
+var resultForNumber = getRandomElement(numberArray);
+console.log(resultForNumber);
+var catArray = [{ name: "Coco", breed: "Ragdoll" }, { name: "Kaju", breed: "Birman" }];
+var resultForCat = getRandomElement(catArray);
+console.log(resultForCat);
