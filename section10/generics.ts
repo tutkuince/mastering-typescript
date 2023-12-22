@@ -63,3 +63,13 @@ const merge = <T extends object, U extends object>(object1: T, object2: U) => {
 
 const comboObj = merge({name: "Tutku"}, {pets: ["coco", "kaju"]});
 console.log(comboObj);
+
+
+console.log("-----------------------------------------");
+
+function makeEmptyArray<T = number>(): T[] {
+    return [];
+}
+
+const numbers = makeEmptyArray(); // default value of a generic type is number
+const strings = makeEmptyArray<string>();
