@@ -51,3 +51,15 @@ const resultForCat: Cat = getRandomElement<Cat>(catArray);
 const resultForCat2 = getRandomElement(catArray);
 console.log(resultForCat);
 console.log(resultForCat2);
+
+console.log("-----------------------------------------");
+
+const merge = <T, U>(object1: T, object2: U) => {
+    return {
+        ...object1,
+        ...object2
+    };
+}
+
+const comboObj = merge({name: "Tutku"}, {pets: ["coco", "kaju"]});
+console.log(comboObj);
