@@ -48,4 +48,6 @@ interface Cat {
 
 const catArray: Array<Cat> = [{name: "Coco", breed: "Ragdoll"}, {name: "Kaju", breed: "Birman"}];
 const resultForCat: Cat = getRandomElement<Cat>(catArray);
+const resultForCat2 = getRandomElement(catArray);
 console.log(resultForCat);
+console.log(resultForCat2);
