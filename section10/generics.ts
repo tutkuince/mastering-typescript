@@ -54,7 +54,7 @@ console.log(resultForCat2);
 
 console.log("-----------------------------------------");
 
-const merge = <T, U>(object1: T, object2: U) => {
+const merge = <T extends object, U extends object>(object1: T, object2: U) => {
     return {
         ...object1,
         ...object2
