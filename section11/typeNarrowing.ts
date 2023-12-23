@@ -38,3 +38,10 @@ const talk = (creature: Cat | Dog) => {
         console.log(creature.bark);
     }
 }
+
+const printFullDate = (date: Date | string): Date | string => {
+    if (date instanceof Date)
+        return date.toUTCString();
+    else
+        return new Date(date).toUTCString();
+}

@@ -36,3 +36,9 @@ var talk = function (creature) {
         console.log(creature.bark);
     }
 };
+var printFullDate = function (date) {
+    if (date instanceof Date)
+        return date.toUTCString();
+    else
+        return new Date(date).toUTCString();
+};
