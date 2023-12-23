@@ -17,6 +17,7 @@ var printLetters = function (word) {
         console.log("No word was provided.");
     }
 };
+// EQUALITY NARROWING
 var someFunc = function (x, y) {
     if (x === y) {
         x.toUpperCase();
@@ -25,5 +26,13 @@ var someFunc = function (x, y) {
     else {
         console.log(x);
         console.log(y);
+    }
+};
+var talk = function (creature) {
+    if ("meow" in creature) {
+        console.log(creature.meow);
+    }
+    else {
+        console.log(creature.bark);
     }
 };
