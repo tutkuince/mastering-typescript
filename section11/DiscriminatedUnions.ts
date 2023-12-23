@@ -21,7 +21,14 @@ interface Pig {
     kind: "pig";
 }
 
-type FarmAnimal = Pig | Rooster | Cow;
+interface Sheep {
+    name: string;
+    weight: number;
+    age: number;
+    kind: "sheep";
+}
+
+type FarmAnimal = Pig | Rooster | Cow | Sheep;
 
 const getFarmAnimalSound = (animal: FarmAnimal) => {
     switch (animal.kind) {
@@ -31,6 +38,11 @@ const getFarmAnimalSound = (animal: FarmAnimal) => {
             return "Mooo!";
         case "rooster":
             return "Cockadoodledoo!";
+        case "sheep":
+            return "Baaa!";
+        default:
+            const _exhaustiveCheck: never = animal; // we should never make it here, if we handled all cases correctly
+            return _exhaustiveCheck;
     }
 }
 
