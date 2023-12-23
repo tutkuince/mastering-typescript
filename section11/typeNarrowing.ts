@@ -16,3 +16,14 @@ const printLetters = (word?: string) => {
         console.log("No word was provided.");
     }
 }
+
+// EQUALITY NARROWING
+const someFunc = (x: string | boolean, y: string | number) => {
+    if (x === y) {
+        x.toUpperCase();
+        y.toUpperCase();
+    } else {
+        console.log(x);
+        console.log(y);
+    }
+}

@@ -17,3 +17,13 @@ var printLetters = function (word) {
         console.log("No word was provided.");
     }
 };
+var someFunc = function (x, y) {
+    if (x === y) {
+        x.toUpperCase();
+        y.toUpperCase();
+    }
+    else {
+        console.log(x);
+        console.log(y);
+    }
+};
