@@ -45,3 +45,24 @@ const printFullDate = (date: Date | string): Date | string => {
     else
         return new Date(date).toUTCString();
 }
+
+interface Cat1 {
+    name: string;
+    numLives: number;
+}
+interface Dog1 {
+    name: string;
+    breed: string;
+}
+
+// animal is Cat1 => guarantees this is a cat or not
+const isCat = (animal: Cat1 | Dog1): animal is Cat1 => {
+    return (animal as Cat1).numLives !== undefined;
+}
+
+const makeNoise = (animal: Cat1 | Dog1): string => {
+    if (isCat(animal)) {
+        return "Meow!";
+    }
+    return "Woff!";
+}

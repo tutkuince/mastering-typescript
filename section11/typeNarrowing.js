@@ -42,3 +42,13 @@ var printFullDate = function (date) {
     else
         return new Date(date).toUTCString();
 };
+// animal is Cat1 => guarantees this is a cat or not
+var isCat = function (animal) {
+    return animal.numLives !== undefined;
+};
+var makeNoise = function (animal) {
+    if (isCat(animal)) {
+        return "Meow!";
+    }
+    return "Woff!";
+};
