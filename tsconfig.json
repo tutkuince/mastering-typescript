@@ -108,11 +108,11 @@
   },
   "include": [
     "section12/src"
-  ],
-  "exclude": [
-    "section08/dontTouch.ts"
-  ],
-  "files": [
-    "section09/src/index.ts"
-  ]
+  ]//,
+//  "exclude": [
+//    "section08/dontTouch.ts"
+//  ],
+//  "files": [
+//    "section09/src/index.ts"
+//  ]
 }
