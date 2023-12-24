@@ -1,4 +1,4 @@
 import {add, sample} from "./utils";
 
-add(1, 2);
-sample([12, 3, 42]);
+console.log(add(1, 2));
+console.log(sample([12, 3, 42]));
