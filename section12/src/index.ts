@@ -23,10 +23,16 @@ interface User {
     }
 }
 
-axios.get<User>("https://jsonplaceholder.typicode.com/users/1")
+// axios.get<User>("https://jsonplaceholder.typicode.com/users/1")
+//     .then((response) => {
+//         printUser(response.data);
+//     }).catch(error => {
+//     console.log("ERROR!", error);
+// });
+
+axios.get<Array<User>>("https://jsonplaceholder.typicode.com/users")
     .then((response) => {
-        console.log("WOO!!!");
-        printUser(response.data);
+        response.data.forEach(printUser);
     }).catch(error => {
     console.log("ERROR!", error);
 });
@@ -35,4 +41,5 @@ const printUser = (user: User): void => {
     console.log(user.name);
     console.log(user.email);
     console.log(user.phone);
+    console.log("----------------------");
 }
