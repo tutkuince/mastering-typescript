@@ -1,11 +1,12 @@
 export default class User {
-    constructor(public username: string, public email: string) {
+    constructor(username, email) {
+        this.username = username;
+        this.email = email;
     }
     logout() {
         console.log(`${this.username} logs out`);
     }
 }
-
-export const userHelper = (): void => {
+export const userHelper = () => {
     console.log("User helper");
-}
+};
